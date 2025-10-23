@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Helios Full Launcher</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 50px; }
+    button { padding: 15px 25px; margin: 10px; font-size: 16px; cursor: pointer; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Helios Full Launcher</h1>
+  <p>Click below to open all Helios files at once:</p>
+  <button onclick="openAll()">Open Everything</button>
+
+  <script>
+    function openAll() {
+      const files = [
+        'index.html',
+        'FAQ.md',
+        'LICENSE',
+        'README.md',
+        'script.js',
+        'styles.css',
+        'Offline-File/Helios-Offline.html'
+      ];
+
+      files.forEach(file => {
+        window.open(file, '_blank');
+      });
+    }
+  </script>
+</body>
+</html>
